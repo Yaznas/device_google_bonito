@@ -2,16 +2,20 @@
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Candy stuff.
+$(call inherit-product, vendor/candy/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/bonito/aosp_bonito.mk)
 
--include device/google/bonito/bonito/device-lineage.mk
+# Inherit GAPPS
+$(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
+
+# Inherits Candy device configuration
+$(call inherit-product, device/google/bonito/bonito/device-candy.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_bonito
+PRODUCT_NAME := candy_bonito
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 3a XL
 TARGET_MANUFACTURER := Google
