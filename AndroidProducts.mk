@@ -25,3 +25,7 @@ PRODUCT_MAKEFILES += \
 COMMON_LUNCH_CHOICES := \
     aosp_bonito-userdebug \
     aosp_sargo-userdebug
+
+COMMON_LUNCH_CHOICES := \
+    candy_bonito-userdebug \
+    candy_sargo-userdebug
