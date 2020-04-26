@@ -75,8 +75,8 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
     MKDTIMG=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/libufdt/mkdtimg
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := gulch_defconfig
-TARGET_KERNEL_SOURCE := kernel/google/b4s4
+TARGET_KERNEL_CONFIG := bonito_defconfig
+TARGET_KERNEL_SOURCE := kernel/google/bluecross
 
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_BOOT_HEADER_VERSION := 2
