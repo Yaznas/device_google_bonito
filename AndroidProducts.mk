@@ -16,4 +16,4 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_bonito.mk \
-    $(LOCAL_DIR)/abc.mk
+    $(LOCAL_DIR)/candy_bonito.mk
